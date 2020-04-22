@@ -42,6 +42,26 @@ var LoadStudentInformation = function(){
     let tableString;
     let studentData;
 
+    getStudent.forEach(element => {
+        studentData+= `<tr>
+                            <td>
+                                ${element.FirstName}
+                            </td>
+                            <td>
+                                ${element.LastName}
+                            </td>
+                            <td>
+                                ${element.Email}
+                            </td>
+                            <td>
+                                ${element.Address}
+                            </td>
+                            <td>
+                                ${element.Phone}
+                            </td>
+                      </tr>`
+    });
+
     tableString = `<table class=table>
                         <thead>
                             <tr>    
